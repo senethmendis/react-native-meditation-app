@@ -1,4 +1,4 @@
-import images from "@/constants/affirmation-images";
+import images from "@/constants/aff-img";
 
 const AFFIRMATION_GALLERY = [
   {
