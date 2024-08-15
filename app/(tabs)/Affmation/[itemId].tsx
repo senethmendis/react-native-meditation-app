@@ -1,8 +1,9 @@
+import AppGradient from "@/components/AppGradient";
 import AFFIRMATION_GALLERY from "@/constants/aff-galary";
 import { GalleryPreviewData } from "@/constants/models/Aff-category";
 import { useLocalSearchParams } from "expo-router";
 import React, { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { ImageBackground, Text, View } from "react-native";
 
 export default function AffmationPractice() {
   const { itemId } = useLocalSearchParams();
@@ -22,9 +23,19 @@ export default function AffmationPractice() {
     }
   }, []);
 
+  console.log(affmation);
+
   return (
     <View className="flex-1">
-      <Text>AffmationPractice</Text>
+      <ImageBackground
+        src={affmation?.image}
+        resizeMode="cover"
+        className="flex-1"
+      >
+        <AppGradient colors={["rgba(0,0,0,0.1)", "rgba(0,0,0,0.1)"]}>
+          <Text>test</Text>
+        </AppGradient>
+      </ImageBackground>
     </View>
   );
 }
