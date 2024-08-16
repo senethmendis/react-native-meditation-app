@@ -1,6 +1,7 @@
 # Meditation App React Navtive
-![dp](https://github.com/senethmendis/pos-system-fullstack/blob/main/ss.png)
-
+![dp](https://github.com/senethmendis/react-native-meditation-app/blob/master/assets/Screenshot%202024-08-16%20233736.png)
+![dp](https://github.com/senethmendis/react-native-meditation-app/blob/master/assets/Screenshot%202024-08-16%20233810.png)
+![dp](https://github.com/senethmendis/react-native-meditation-app/blob/master/assets/Screenshot%202024-08-16%20233827.png)
 
 ### Built With
 
