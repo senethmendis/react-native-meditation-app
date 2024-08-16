@@ -6,6 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { MEDITATION_DATA } from "@/constants/med-data";
 import MEDITATION_IMAGES from "@/constants/med-img";
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
 
 export default function NatureMadi() {
   return (
@@ -27,7 +28,7 @@ export default function NatureMadi() {
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <Pressable
-                onPress={() => console.log("test")}
+                onPress={() => router.push(`/meditate/${item.id}`)}
                 className="h-48 my-3 rounded-md overflow-hidden"
               >
                 <ImageBackground
